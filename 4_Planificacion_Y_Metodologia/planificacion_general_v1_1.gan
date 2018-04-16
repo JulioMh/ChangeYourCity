@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="ChangeYourCity" company="ChangeYourCity.org" webLink="http://" view-date="2018-02-25" view-index="0" gantt-divider-location="300" resource-divider-location="300" version="2.8.6" locale="en_US">
+<?xml version="1.0" encoding="UTF-8"?><project name="ChangeYourCity" company="ChangeYourCity.org" webLink="http://" view-date="2018-03-18" view-index="0" gantt-divider-location="300" resource-divider-location="300" version="2.8.6" locale="en_US">
     <description><![CDATA[Proyecto de la aplicación de Change your City]]></description>
     <view zooming-state="default:6" id="gantt-chart">
         <field id="tpd3" name="Name" width="167" order="0"/>
@@ -33,13 +33,14 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="0" name="MODELADO" color="#8cb6ce" meeting="false" start="2018-04-05" duration="5" complete="10" thirdDate="2018-04-05" thirdDate-constraint="0" expand="true"/>
-        <task id="3" name="ARQUITECTURA" meeting="false" start="2018-04-09" duration="13" complete="0" expand="true"/>
+        <task id="0" name="MODELADO" color="#8cb6ce" meeting="false" start="2018-04-02" duration="5" complete="10" thirdDate="2018-04-02" thirdDate-constraint="0" expand="true"/>
+        <task id="25" name="DISEÑO" color="#8cb6ce" meeting="false" start="2018-04-09" duration="7" complete="0" thirdDate="2018-04-04" thirdDate-constraint="0" expand="true"/>
+        <task id="28" name="IMPLEMENTACION" color="#8cb6ce" meeting="false" start="2018-04-18" duration="7" complete="0" thirdDate="2018-04-18" thirdDate-constraint="0" expand="true"/>
         <task id="4" name="TESTEO" meeting="false" start="2018-04-25" duration="6" complete="0" expand="true"/>
         <task id="7" name="REQUISITOS" color="#8cb6ce" meeting="false" start="2018-03-21" duration="3" complete="70" thirdDate="2018-03-21" thirdDate-constraint="1" expand="true"/>
         <task id="22" name="PROPUESTA" color="#8cb6ce" meeting="false" start="2018-03-15" duration="5" complete="100" thirdDate="2018-03-15" thirdDate-constraint="0" expand="true"/>
         <task id="24" name="ENTREVISTA" color="#8cb6ce" meeting="false" start="2018-03-15" duration="5" complete="90" thirdDate="2018-03-15" thirdDate-constraint="0" expand="true"/>
-        <task id="9" name="PLANIFICACION" color="#8cb6ce" meeting="false" start="2018-03-26" duration="3" complete="100" thirdDate="2018-03-26" thirdDate-constraint="1" expand="true"/>
+        <task id="9" name="PLANIFICACION" color="#8cb6ce" meeting="false" start="2018-03-26" duration="5" complete="100" thirdDate="2018-03-26" thirdDate-constraint="1" expand="true"/>
     </tasks>
     <resources/>
     <allocations/>
