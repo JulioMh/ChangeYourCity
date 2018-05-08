@@ -43,12 +43,15 @@
         <task id="1" name="Actividades" color="#8cb6ce" meeting="false" start="2018-05-02" duration="3" complete="0" thirdDate="2018-02-01" thirdDate-constraint="0" expand="true">
             <task id="27" name="Registrarse" color="#8cb6ce" meeting="false" start="2018-05-02" duration="1" complete="0" thirdDate="2018-04-16" thirdDate-constraint="0" expand="true"/>
             <task id="30" name="Apoyar propuestas" color="#8cb6ce" meeting="false" start="2018-05-03" duration="1" complete="0" thirdDate="2018-05-07" thirdDate-constraint="0" expand="true"/>
-            <task id="32" name="Verificar propuesta" color="#8cb6ce" meeting="false" start="2018-05-03" duration="1" complete="0" thirdDate="2018-05-08" thirdDate-constraint="0" expand="true"/>
+            <task id="32" name="Inicio sesión" color="#8cb6ce" meeting="false" start="2018-05-03" duration="1" complete="0" thirdDate="2018-05-08" thirdDate-constraint="0" expand="true"/>
             <task id="33" name="Activar sesión" color="#8cb6ce" meeting="false" start="2018-05-04" duration="1" complete="0" thirdDate="2018-04-16" thirdDate-constraint="0" expand="true"/>
             <task id="34" name="Crear propuestas" color="#8cb6ce" meeting="false" start="2018-05-04" duration="1" complete="0" thirdDate="2018-04-16" thirdDate-constraint="0" expand="true"/>
         </task>
         <task id="2" name="Clases" color="#8cb6ce" meeting="false" start="2018-05-03" duration="3" complete="0" thirdDate="2018-02-01" thirdDate-constraint="0" expand="true"/>
-        <task id="3" name="Secuencia" color="#8cb6ce" meeting="false" start="2018-05-02" duration="4" complete="0" thirdDate="2018-02-01" thirdDate-constraint="0" expand="true"/>
+        <task id="3" name="Secuencia" color="#8cb6ce" meeting="false" start="2018-05-04" duration="2" complete="0" thirdDate="2018-02-01" thirdDate-constraint="0" expand="true">
+            <task id="35" name="Inicio sesión" color="#8cb6ce" meeting="false" start="2018-05-07" duration="1" complete="0" thirdDate="2018-04-23" thirdDate-constraint="0" expand="true"/>
+            <task id="37" name="Crear propuesta" color="#8cb6ce" meeting="false" start="2018-05-04" duration="1" complete="0" thirdDate="2018-04-06" thirdDate-constraint="0" expand="true"/>
+        </task>
     </tasks>
     <resources/>
     <allocations/>
