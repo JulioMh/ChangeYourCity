@@ -48,12 +48,14 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 		// Crear usuario por defecto
 		User user = new User();
-		user.setEmail("test@test.com");
-		// la contraseña es test (encriptada usando bcrypt)
+		user.setEmail("scrumMaster@gmail.com");
+		// la contraseña es perroverde (encriptada usando bcrypt)
 		// https://www.dailycred.com/article/bcrypt-calculator
-		user.setPassword("$2a$04$mhVuX7/zGzhPu7xKCrqY8e7M0RkORqZ4QB/4rCEgYQNddyt1mAKZK");
-		user.setFirstName("Alan");
-		user.setLastName("Wake");
+		user.setPassword("$2a$04$YW5XOokDRvyKysRn69d5OubNt.9G.FjTHfU3XmwqXB80ESyTSR2r.");
+		user.setName("Jose");
+		user.setLastName1("Casero");
+		user.setLastName2("Fuentes");
+		user.setMunicipality("Antequera");
 		if (userRepository.findByEmail(user.getEmail()) == null) {
 			userRepository.save(user);
 		}
