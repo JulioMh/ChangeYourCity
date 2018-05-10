@@ -1,18 +1,18 @@
 {
-  "name": "application-name",
-  "version": "0.0.1",
+  "name": "login",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodejs ./bin/www"
+    "start": "node ./bin/www",
+    "live": "nodemon server.js"
   },
   "dependencies": {
-    "body-parser": "~1.0.0",
-    "cookie-parser": "~1.0.1",
-    "debug": "~0.7.4",
-    "express": "~4.0.0",
-    "jade": "~1.3.0",
-    "mongodb": "^3.0.7",
-    "morgan": "~1.0.0",
-    "static-favicon": "~1.0.0"
+    "body-parser": "~1.15.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "express": "~4.13.4",
+    "jade": "~1.11.0",
+    "morgan": "~1.7.0",
+    "serve-favicon": "~2.3.0"
   }
 }

@@ -1,8 +1,8 @@
 var config = {
-  host : 'localhost',
-  user : 'root',
-  password : '',
-  database : 'ChangeYourCity'
+	host : 'localhost',
+	user : 'root',
+	password : '',
+	database : 'tutorialnodejs'
 };
 
 module.exports = config;
