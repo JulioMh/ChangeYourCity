@@ -4,7 +4,7 @@ var bcrypt = require('bcryptjs');
 module.exports = {
 
 	getSignUp : function(req, res, next){
-		return res.render('users/signup');
+		return res.render('users/register');
 	},
 
 	postSignUp: function(req, res, next){
@@ -24,7 +24,7 @@ module.exports = {
 
 		db.connect();
 
-		db.query('INSERT INTO users SET ?', user, function(err, rows, fields){
+		db.query('INSERT INTO user SET ?', user, function(err, rows, fields){
 			if(err) throw err;
 
 			db.end();
@@ -34,7 +34,7 @@ module.exports = {
 	},
 
 	getSignIn: function(req, res, next){
-		return res.render('users/index.html', {message: req.flash('info'), authmessage : req.flash('authmessage')});
+		return res.render('users/login', {message: req.flash('info'), authmessage : req.flash('authmessage')});
 	},
 
 	logout : function(req, res, next){

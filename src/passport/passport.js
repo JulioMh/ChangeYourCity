@@ -20,7 +20,7 @@ module.exports = function(passport){
 		var db = mysql.createConnection(config);
 		db.connect();
 
-		db.query('SELECT * FROM users WHERE email = ?', email, function(err, rows, fields){
+		db.query('SELECT * FROM user WHERE email = ?', email, function(err, rows, fields){
 			if(err) throw err;
 
 			db.end();
@@ -28,9 +28,17 @@ module.exports = function(passport){
 			if(rows.length > 0){
 
 				var user = rows[0];
+				if(password === user.password){
+					return done(null, {
+						id: user.id,
+						nombre : user.nombre,
+						email : user.email
+					});
+				}
+
 				if(bcrypt.compareSync(password, user.password)){
 					return done(null, {
-						id: user.id, 
+						id: user.id,
 						nombre : user.nombre,
 						email : user.email
 					});

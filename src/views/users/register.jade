@@ -1,0 +1,227 @@
+doctype html
+html(lang='en')
+  head
+    title Change Your City
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    link(rel='stylesheet', type='text/css', href='/stylesheets/register.css')
+  body
+    form.register(action='http://localhost:3000/auth/signin', method='POST')
+      h1 Registro
+      fieldset.row1
+        legend
+          | Detalles de la Cuenta
+        p
+          label
+            | Email *
+          input(type='email' name='email' id='email')
+          label
+            | Repita email *
+          input(type='email')
+        p
+          label
+            | Contraseña*
+          input(type='password' name='password' id='password')
+          label
+            | Repita Contraseña*
+          input(type='password')
+          label.obinfo
+            | * Campos obligatorios
+      fieldset.row2
+        legend
+          | Datos Personales
+        p
+          label
+            | Nombre *
+          input.long(type='text' name='nombre' id='nombre')
+        p
+          label
+            | Apellido1 *
+          input.long(type='text')
+        p
+          label
+            | Apellido2 *
+          input.long(type='text')
+        p
+          label
+            | Dirección *
+          input.long(type='text')
+        p
+          label.optional
+            | Teléfono
+          input.long(type='text', maxlength='9')
+        p
+          label
+            | Municipio *
+          input.long(type='text')
+        p
+          label
+            | DNI *
+          input.long(type='text', maxlength='9')
+      fieldset.row3
+        legend
+          | Más información
+        p
+          label Sexo *
+          input(type='radio', value='radio')
+          label.gender Varón
+          input(type='radio', value='radio')
+          label.gender Hembra
+        p
+          label
+            | Cumpleaños *
+          select.date
+            option(value='1')
+              | 01
+            option(value='2')
+              | 02
+            option(value='3')
+              | 03
+            option(value='4')
+              | 04
+            option(value='5')
+              | 05
+            option(value='6')
+              | 06
+            option(value='7')
+              | 07
+            option(value='8')
+              | 08
+            option(value='9')
+              | 09
+            option(value='10')
+              | 10
+            option(value='11')
+              | 11
+            option(value='12')
+              | 12
+            option(value='13')
+              | 13
+            option(value='14')
+              | 14
+            option(value='15')
+              | 15
+            option(value='16')
+              | 16
+            option(value='17')
+              | 17
+            option(value='18')
+              | 18
+            option(value='19')
+              | 19
+            option(value='20')
+              | 20
+            option(value='21')
+              | 21
+            option(value='22')
+              | 22
+            option(value='23')
+              | 23
+            option(value='24')
+              | 24
+            option(value='25')
+              | 25
+            option(value='26')
+              | 26
+            option(value='27')
+              | 27
+            option(value='28')
+              | 28
+            option(value='29')
+              | 29
+            option(value='30')
+              | 30
+            option(value='31')
+              | 31
+          select
+            option(value='1')
+              | Enero
+            option(value='2')
+              | Febrero
+            option(value='3')
+              | Marzo
+            option(value='4')
+              | Abril
+            option(value='5')
+              | Mayo
+            option(value='6')
+              | Junio
+            option(value='7')
+              | Julio
+            option(value='8')
+              | Agosto
+            option(value='9')
+              | Septiembre
+            option(value='10')
+              | Octubre
+            option(value='11')
+              | Noviembre
+            option(value='12')
+              | Diciembre
+          input.year(type='text', size='4', maxlength='4')
+          | e.j 1976
+        p
+          label
+            | Nacionalidad *
+          select
+            option(value='0')
+            option(value='1')
+              | Español
+            option(value='2')
+              | Camerunés
+            option(value='3')
+              | Ruso
+            option(value='4')
+              | Mongolo
+            option(value='5')
+              | Chino
+        //
+          <p>
+          <label>Children *
+          </label>
+          <input type="checkbox" value="" />
+          </p>
+        //
+          SI necesitais una caja de información os la ponemos
+          No os preocupais chicos del Back-End ;)
+        //
+          <div class="infobox"><h4>Helpful Information</h4>
+          <p>Here comes some explaining text, sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+          </div>
+      fieldset.row4
+        legend
+          | Términos y envíos
+        p.agreement
+          input(type='checkbox', value='')
+          // Se linkeara al archivo de terminos y condiciones de la aplicación
+          label
+            | *  Acepto los
+            a(href='#') Términos y Condiciones
+        p.agreement
+          input(type='checkbox', value='')
+          label Quiero recibir información sobre las propuestas cercanas a mi
+        // Si queremos poner algun checkBox más pues sin problemas COMPADRES
+        //
+          <p class="agreement">
+          <input type="checkbox" value=""/>
+          <label></label>
+          </p>
+      div
+        button.button Registrar »
+      //
+        <div>
+        <div class="wrap-login100-form-btn">
+        <div class="login100-form-bgbtn"></div>
+        <button type="submit", class="button">Registrar
+      // &raquo;
+      //
+        </button>
+        </div>
+        </div>
+        <div class="container-login100-form-btn">
+        <div class="wrap-login100-form-btn">
+        <div class="login100-form-bgbtn"></div>
+        <button class="login100-form-btn">
+        Acceder
+        </button>
+        </div>
+        </div>
