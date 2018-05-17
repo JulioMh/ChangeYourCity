@@ -28,18 +28,10 @@ module.exports = function(passport){
 			if(rows.length > 0){
 
 				var user = rows[0];
-				if(password === user.password){
-					return done(null, {
-						id: user.id,
-						nombre : user.nombre,
-						email : user.email
-					});
-				}
 
 				if(bcrypt.compareSync(password, user.password)){
 					return done(null, {
-						id: user.id,
-						nombre : user.nombre,
+						firstName : user.firstName,
 						email : user.email
 					});
 				}

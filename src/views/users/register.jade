@@ -5,20 +5,20 @@ html(lang='en')
     meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
     link(rel='stylesheet', type='text/css', href='/stylesheets/register.css')
   body
-    form.register(action='http://localhost:3000/auth/signin', method='POST')
+    form.register(action='http://localhost:3000/auth/signup', method='POST')
       h1 Registro
       fieldset.row1
         legend
           | Detalles de la Cuenta
         p
-          label
+          label(for="email")
             | Email *
           input(type='email' name='email' id='email')
           label
             | Repita email *
           input(type='email')
         p
-          label
+          label(for="password")
             | Contraseña*
           input(type='password' name='password' id='password')
           label
@@ -30,7 +30,7 @@ html(lang='en')
         legend
           | Datos Personales
         p
-          label
+          label(for="nombre")
             | Nombre *
           input.long(type='text' name='nombre' id='nombre')
         p
