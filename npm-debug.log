@@ -1,19 +1,33 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'start' ]
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'start',
+1 verbose cli   '1_Propuesta',
+1 verbose cli   '2_Entrevista',
+1 verbose cli   '3_Requisitos',
+1 verbose cli   '4_Planificacion_Y_Metodologia',
+1 verbose cli   '5_Modelado_Y_Patrones',
+1 verbose cli   '7_Presentacion',
+1 verbose cli   '8_Resultados',
+1 verbose cli   'doc',
+1 verbose cli   'npm-debug.log',
+1 verbose cli   'README.md',
+1 verbose cli   'src' ]
 2 info using npm@3.5.2
 3 info using node@v8.10.0
-4 verbose stack Error: ENOENT: no such file or directory, open '/home/jaysus/Documents/Github/ChangeYourCity/package.json'
-5 verbose cwd /home/jaysus/Documents/Github/ChangeYourCity
-6 error Linux 4.15.0-20-generic
-7 error argv "/usr/bin/node" "/usr/bin/npm" "start"
-8 error node v8.10.0
-9 error npm  v3.5.2
-10 error path /home/jaysus/Documents/Github/ChangeYourCity/package.json
-11 error code ENOENT
-12 error errno -2
-13 error syscall open
-14 error enoent ENOENT: no such file or directory, open '/home/jaysus/Documents/Github/ChangeYourCity/package.json'
-15 error enoent ENOENT: no such file or directory, open '/home/jaysus/Documents/Github/ChangeYourCity/package.json'
-15 error enoent This is most likely not a problem with npm itself
-15 error enoent and is related to npm not being able to find a file.
-16 verbose exit [ -2, true ]
+4 verbose config Skipping project config: /home/cherra/.npmrc. (matches userconfig)
+5 verbose stack Error: ENOENT: no such file or directory, open '/home/cherra/package.json'
+6 verbose cwd /home/cherra/IntroSoft/ChangeYourCity
+7 error Linux 4.15.0-20-generic
+8 error argv "/usr/bin/node" "/usr/bin/npm" "start" "1_Propuesta" "2_Entrevista" "3_Requisitos" "4_Planificacion_Y_Metodologia" "5_Modelado_Y_Patrones" "7_Presentacion" "8_Resultados" "doc" "npm-debug.log" "README.md" "src"
+9 error node v8.10.0
+10 error npm  v3.5.2
+11 error path /home/cherra/package.json
+12 error code ENOENT
+13 error errno -2
+14 error syscall open
+15 error enoent ENOENT: no such file or directory, open '/home/cherra/package.json'
+16 error enoent ENOENT: no such file or directory, open '/home/cherra/package.json'
+16 error enoent This is most likely not a problem with npm itself
+16 error enoent and is related to npm not being able to find a file.
+17 verbose exit [ -2, true ]
