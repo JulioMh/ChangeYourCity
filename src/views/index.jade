@@ -1,0 +1,321 @@
+doctype html
+html.no-javascripts(lang='zxx')
+  head
+    // Mobile Specific Meta
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    // Favicon
+    link(rel='shortcut icon', href='images/fav.png')
+    // Author Meta
+    meta(name='author', content='codepixer')
+    // Meta Description
+    meta(name='description', content='')
+    // Meta Keyword
+    meta(name='keywords', content='')
+    // meta character set
+    meta(charset='UTF-8')
+    // Site Title
+    title Change Your City
+    link(href='https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700', rel='stylesheet')
+    //
+      CSS
+      =============================================
+    link(rel='stylesheet', href='stylesheets/home/linearicons.css')
+    link(rel='stylesheet', href='stylesheets/home/font-awesome.min.css')
+    link(rel='stylesheet', href='stylesheets/home/bootstrap.css')
+    link(rel='stylesheet', href='stylesheets/home/magnific-popup.css')
+    link(rel='stylesheet', href='stylesheets/home/nice-select.css')
+    link(rel='stylesheet', href='stylesheets/home/hexagons.min.css')
+    link(rel='stylesheet', href='stylesheets/home/animate.min.css')
+    link(rel='stylesheet', href='stylesheets/home/owl.carousel.css')
+    link(rel='stylesheet', href='stylesheets/home/main.css')
+  body
+    header#header
+      .container.main-menu
+        .row.align-items-center.justify-content-between.d-flex
+          #logo
+            // <a href="index.html"><img src="images/logo.png" alt="" title="" /></a>
+            a(href='index.html')
+              img(src='images/Logo1.png', alt='', title='')
+          nav#nav-menu-container
+            // text-shadow: -1px -1px 1px #333, 1px -1px 1px #333, -1px 1px 1px #333, 1px 1px 1px #333;
+            ul.nav-menu
+              li.menu-active
+                a(href='#') Home
+              li
+                a(href='#') Sobre nosotros
+              li
+                a(href='#') Proyectos
+              li
+                a(href='#') Desperfectos
+              li
+                a(href='#') Contacto
+              li
+                a(href='auth/signin') Conectar
+          // #nav-menu-container
+    // #header
+    // start banner Area
+    section#home.banner-area
+      .container
+        .row.fullscreen.d-flex.align-items-center.justify-content-center
+          .banner-content.col-lg-6.col-md-6
+            h1(style='text-shadow: -1px -1px 1px #333, 1px -1px 1px #333, -1px 1px 1px #333, 1px 1px 1px #333;')
+              | Mejora
+              br
+              | 								Tu ciudad
+              br
+              | 								Con Nosotros
+            p.text-white.text-uppercase(style='text-shadow: -1px -1px 1px #333, 1px -1px 1px #333, -1px 1px 1px #333, 1px 1px 1px #333;')
+              | Todos queremos una ciudad mejor
+            a.primary-btn.header-btn(href='#') Conectar
+          .banner-img.col-lg-6.col-md-6
+            // <img class="img-fluid" src="images/banner-img.png" alt="">
+    // End banner Area
+    // Start Desperfectus Area
+    section.products-area.section-gap
+      .container
+        .row.d-flex.justify-content-center
+          .col-md-12.pb-40.header-text.text-center
+            h1.pb-10 Últimos Desperfectos
+            p
+              | Échale un vistazo a los desperfectos de tus alrededores.
+        .row
+          .col-lg-3.col-md-6
+            .single-product
+              .thumb
+                // <img src="images/p1.png" alt="">
+                img.details-image(src='images/desp/farola1.jpg', alt='')
+              .details
+                h4 Farola Rota
+                p
+                  | Luminaria destruida.
+                p
+                  b Vélez-Málaga
+                a.primary-btn.text-uppercase(href='#') Ver Propuesta
+          .col-lg-3.col-md-6
+            .single-product
+              .thumb
+                // <img src="images/p2.png" alt="">
+                img.details-image(src='images/desp/Alcantarilla_peligrosa.jpeg', alt='')
+              .details
+                h4 Alcantarilla rota
+                p
+                  | Alcantarilla peligrosa, carretera.
+                p
+                  b El Palo
+                a.primary-btn.text-uppercase(href='#') Ver Propuesta
+          .col-lg-3.col-md-6
+            .single-product
+              .thumb
+                // <img src="images/p3.png" alt="">
+                img.details-image(src='images/desp/ArbolCalle.jpeg', alt='')
+              .details
+                h4 Árbol caído
+                p
+                  | Árbol en mitad de carretera.
+                p
+                  b Alhaurín de la Torre
+                a.primary-btn.text-uppercase(href='#') Ver Propuesta
+          .col-lg-3.col-md-6
+            .single-product
+              .thumb
+                img.details-image(src='images/desp/banco.jpeg', alt='')
+              .details
+                h4 Banco roto
+                p
+                  | Banco roto sin una pata.
+                p
+                  b Antequera
+                a.primary-btn.text-uppercase(href='#') Ver Propuesta
+    // End products Area
+    // Start offered-service Area
+    section.offered-service-area.section-gap
+      .container
+        .row.d-flex.justify-content-center
+          .col-md-12.pb-40.header-text.text-center
+            h1.pb-10 Últimos proyectos
+            p
+              | Echale un vistazo a los proyectos más interesantes.
+        .row
+          .col-lg-4
+            .single-offered-service
+              img.img-fluidv2(src='images/Proyecto/proyectoPiscina.jpeg', alt='')
+              a(href='#')
+                h4 Piscina Municipal
+                h5 Torre del Mar
+              p
+                | Piscina en Torre del Mar para todos sus ciudadanos, para mejorar salud y ocio de todos ellos.
+          .col-lg-4
+            .single-offered-service
+              img.img-fluidv2(src='images/Proyecto/proyectoSkate.jpeg', alt='')
+              a(href='#')
+                h4 Skate Park
+                h5 Antequera
+              p
+                | Creación de una zona de entreno para mejorar las opciones de deporte y ocio de todos los ciudadanos, además de cubrir necesid latente.
+          .col-lg-4
+            .single-offered-service
+              img.img-fluidv2(src='images/Proyecto/proyectoParque.jpg', alt='')
+              a(href='#')
+                h4 Parque infantil
+                h5 Los Romanes
+              p
+                | Creación de una zona de ocio y diversión para los más pequeños de los alrededores en busca de mejorar la infancia de estos.
+    // END service-area
+    // Start about-video Area
+    section.about-video-area.section-gap
+      .container
+        .row.align-items-center
+          .col-lg-6.about-video-left
+            h6.text-uppercase Aplicación Change Your City
+            h1
+              | Tenemos una Ciudad
+              br
+              | 								Que cuidar y que cambiar
+            p
+              span Atrévete a mejorar tus alrededores
+            p
+              | Nunca te ha pasado que has querido cambiar cualquier parte de tu ciudad y el ayuntamiento no te hizo caso, ¡CAMBIÉMOSLO!
+            a.primary-btn(href='about.html') Sobre Nosotros
+          .col-lg-6.about-video-right.justify-content-center.align-items-center.d-flex.relative
+            .overlay.overlay-bg
+            a.play-btn(href='https://www.youtube.com/watch?v=ARA0AxrnHdM')
+              img.img-fluid.mx-auto(src='images/play-btn.png', alt='')
+    // End about-video Area
+    // Start feature Area
+    section.feature-area.section-gap
+      .container
+        .row.d-flex.justify-content-center
+          .col-md-12.pb-40.header-text.text-center
+            h1.pb-10.text-white Algunas características que nos hacen únicos
+            p.text-white
+              | Confía en nosotros.
+        .row
+          .col-lg-4.col-md-6
+            .single-feature
+              a.title.d-flex.flex-row(href='#')
+                span.lnr.lnr-user
+                h4 Técnicos expertos
+              p
+                | Todo el equipo de Change Your City está compuesto por Estudiantes de Ingeniería de Software.
+          .col-lg-4.col-md-6
+            .single-feature
+              a.title.d-flex.flex-row(href='#')
+                span.lnr.lnr-license
+                h4 Servicio profesional
+              p
+                | Guiados por el código de la práctica ética y profesional de Ingeniería de Software.
+          .col-lg-4.col-md-6
+            .single-feature
+              a.title.d-flex.flex-row(href='#')
+                span.lnr.lnr-phone
+                h4 Gran nivel en support
+              p
+                | Al ser expertos en tecnología, el apoyo al usuario nos preocupa mucho y aténdemos a las dudas de ellos.
+          .col-lg-4.col-md-6
+            .single-feature
+              a.title.d-flex.flex-row(href='#')
+                span.lnr.lnr-rocket
+                h4 Hábilidades técnicas
+              p
+                | El mismo equipo está dividido según las habilidades de cada uno en subgrupos de Back-End y Front-End.
+          .col-lg-4.col-md-6
+            .single-feature
+              a.title.d-flex.flex-row(href='#')
+                span.lnr.lnr-diamond
+                h4 Muy recomendable.
+              p
+                | Gran apoyo por instituciones nacionales, listas importantes sobre aplicaciones sociales.
+          .col-lg-4.col-md-6
+            .single-feature
+              a.title.d-flex.flex-row(href='#')
+                span.lnr.lnr-bubble
+                h4 Reviews Positivas
+              p
+                | Una gran número de comentarios positivos por parte de nuestro usuarios comprobable link al final.
+    // End feature Area
+    // Start brand Area
+    section.brand-area.pt-120
+      .container
+        .row.align-items-center
+          .col.single-brand
+            img.img-fluid(src='images/Logos/logo_JANDA.png', alt='')
+          .col.single-brand
+            img.img-fluid(src='images/Logos/LogoUMA.jpg', alt='')
+          .col.single-brand
+            img.images-fluid(src='images/Logos/Logo_ETSII.jpg', alt='')
+          .col.single-brand
+            img.img-fluid(src='images/Logos/Logo_Link_Uma.png', alt='')
+          .col.single-brand
+            img.img-fluid(src='images/Logos/Logo_AYTO.png', alt='')
+    // End brand Area
+    br
+    br
+    br
+    // start footer Area
+    footer.footer-area.section-gap
+      .container
+        .row
+          .col-lg-3.col-md-12
+            .single-footer-widget
+              h6 Información adicional
+              ul.footer-nav
+                li
+                  a(href='#') Segmentant default page
+                li
+                  a(href='#') Comentarios de los usuarios
+                li
+                  a(href='#') Lista apps sociales del 2018
+                li
+                  a(href='#') Artículo sobre los beneficios de su uso
+          .col-lg-6.col-md-12
+          .col-lg-3.col-md-12
+            .single-footer-widget.mail-chimp
+              h6.mb-20 Instragram Feed
+              ul.instafeed.d-flex.flex-wrap
+                li
+                  img(src='images/i1.jpg', alt='')
+                li
+                  img(src='images/i2.jpg', alt='')
+                li
+                  img(src='images/i3.jpg', alt='')
+                li
+                  img(src='images/i4.jpg', alt='')
+                li
+                  img(src='images/i5.jpg', alt='')
+                li
+                  img(src='images/i6.jpg', alt='')
+                li
+                  img(src='images/i7.jpg', alt='')
+                li
+                  img(src='images/i8.jpg', alt='')
+        .row.footer-bottom.d-flex.justify-content-between
+          p.col-lg-8.col-sm-12.footer-text.m-0.text-white
+            | Copyright ©
+            script.
+              document.write(new Date().getFullYear());
+            |  Todos los derechos reservados
+          .col-lg-4.col-sm-12.footer-social
+            a(href='#')
+              i.fa.fa-facebook
+            a(href='#')
+              i.fa.fa-twitter
+            a(href='#')
+              i.fa.fa-dribbble
+            a(href='#')
+              i.fa.fa-behance
+    // end footer Area
+    script(src='javascripts/vendor/jquery-2.2.4.min.js')
+    script(src='https://cdnjavascripts.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q', crossorigin='anonymous')
+    script(src='javascripts/vendor/bootstrap.min.js')
+    script(src='javascripts/easing.min.js')
+    script(src='javascripts/hoverIntent.js')
+    script(src='javascripts/superfish.min.js')
+    script(src='javascripts/jquery.ajaxchimp.min.js')
+    script(src='javascripts/jquery.magnific-popup.min.js')
+    script(src='javascripts/owl.carousel.min.js')
+    script(src='javascripts/hexagons.min.js')
+    script(src='javascripts/jquery.nice-select.min.js')
+    script(src='javascripts/jquery.counterup.min.js')
+    script(src='javascripts/waypoints.min.js')
+    script(src='javascripts/mail-script.js')
+    script(src='javascripts/indexmain.js')

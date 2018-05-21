@@ -9,10 +9,6 @@ module.exports = {
 
 	postSignUp: function(req, res, next){
 
-		console.log(req.body.email);
-		console.log(req.body.nombre);
-		console.log(req.body.password);
-
 		var salt = bcrypt.genSaltSync(10);
 		var password = bcrypt.hashSync(req.body.password, salt);
 
