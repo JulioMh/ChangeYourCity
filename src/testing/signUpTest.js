@@ -2,8 +2,9 @@ const request = require('supertest');
 const app = require('../app');
 const expect = require('chai').expect;
 
-describe('redireccion de Registro a Login correcta', function() {
-    it('Should success if credential is valid', function(done) {
+describe('Pruebas de registro de usuario:', function() {
+
+    it('Funciona si el registro correcto es exitoso', function(done) {
         request(app)
            .post('/auth/signup')
            .send({ username: 'a@root.com', password: 'root' })
@@ -11,10 +12,9 @@ describe('redireccion de Registro a Login correcta', function() {
            .expect('Location', '/auth/signin')
            .end(done);
     });
-});
 
-describe('Intento de registro vacío', function(err) {
-    it('Should success if credential is invalid', function(done) {
+
+    it('Debe de funcionar si se lanza un error al registrar un usuario vacio', function(done) {
         request(app)
            .post('/auth/signup')
            .send({ username: '', password: '' })
@@ -23,10 +23,9 @@ describe('Intento de registro vacío', function(err) {
            if (err) return done(err)
            .end(done);
     });
-});
 
-describe('Intento de registro repetido', function(err) {
-    it('Should success if credential is in db', function(done) {
+
+    it('Funciona si se lanza una excepción al intentar registrar un usuario ya registrado', function(done) {
         request(app)
            .post('/auth/signup')
            .send({ username: 'root@root.com', password: 'root' })
