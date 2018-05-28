@@ -25,13 +25,17 @@ module.exports = {
 		db.connect();
 
 		db.query('INSERT INTO user SET ?', user, function(err, rows, fields){
-			if(err) throw err;
-
-			db.end();
+			if(err) {
+				db.end();
+				return res.redirect('/auth/signup');
+			} else {
+				db.end();
+				req.flash('info', 'Se ha registrado correctamente, ya puede iniciar sesion');
+				return res.redirect('/auth/signin');
+			}
 		});
-		req.flash('info', 'Se ha registrado correctamente, ya puede iniciar sesion');
-		return res.redirect('/auth/signup');
 	},
+    a=info
 
 	getSignIn: function(req, res, next){
 		return res.render('users/login', {message: req.flash('info'), authmessage : req.flash('authmessage')});
@@ -39,11 +43,11 @@ module.exports = {
 
 	logout : function(req, res, next){
 		req.logout();
-		res.redirect('/auth/signin');
+		res.redirect('/');
 	},
 
 	getUserPanel : function(req, res, next){
-		res.render('users/panel', {
+		res.render('home', {
 			isAuthenticated : req.isAuthenticated(),
 			user : req.user
 		});
