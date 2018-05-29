@@ -35,7 +35,6 @@ module.exports = {
 			}
 		});
 	},
-    a=info
 
 	getSignIn: function(req, res, next){
 		return res.render('users/login', {message: req.flash('info'), authmessage : req.flash('authmessage')});
