@@ -1,8 +1,8 @@
 var config = {
-	host : '95.39.4.62',
-	port: 1479,
-	user : 'fran',
-	password : 'perroverde',
+	host : '127.0.0.1',//'95.39.4.62',
+	port: 3306,
+	user : 'jaysusm',
+	password : 'XXXX',
 	database : 'ChangeYourCity'
 };
 

@@ -1,0 +1,42 @@
+doctype html
+html(lang='en')
+  head
+    title Change Your City
+    link(rel='icon', type='image/png', href='/images/icons/favicon.ico')
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    link(rel='stylesheet', type='text/css', href='/stylesheets/register.css')
+  body
+    form.register(action='http://localhost:3000/create', method='POST')
+      h1 Creacion de propuesta
+      fieldset.row1
+        legend
+          | Titulo
+        p
+          label(for="titulo")
+            | Titulo *
+          input(type='text' name='titulo' id='titulo')
+        p
+          label(for="localidad")
+            | Localidad *
+          input(type='text' name='localidad' id='localidad')
+      fieldset.row1
+        legend
+          | Cuerpo
+        p
+          label(for="informacion")
+            | Informacion *
+          textarea(rows="10" cols="50" name='informacion' id='informacion')
+      fieldset.row4
+        legend
+          | Términos y envíos
+        p.agreement
+          input(type='checkbox', value='')
+          // Se linkeara al archivo de terminos y condiciones de la aplicación
+          label
+            | *  Acepto los 
+            a(href='#') Términos y Condiciones
+        p.agreement
+          input(type='checkbox', value='')
+          label Quiero recibir información sobre las propuestas cercanas a mi
+      div
+        button.button Crear Propuesta

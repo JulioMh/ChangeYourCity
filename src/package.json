@@ -16,6 +16,7 @@
     "express": "~4.13.4",
     "express-session": "^1.15.6",
     "jade": "~1.11.0",
+    "jade-bootstrap": "^1.0.14",
     "missing": "0.0.1",
     "morgan": "~1.7.0",
     "mysql": "^2.15.0",
