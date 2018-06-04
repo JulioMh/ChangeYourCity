@@ -1,0 +1,191 @@
+doctype html
+html.no-js(lang='zxx')
+  head
+    // Mobile Specific Meta
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    // Favicon
+    link(rel='shortcut icon', href='images/fav.png')
+    // Author Meta
+    meta(name='author', content='codepixer')
+    // Meta Description
+    meta(name='description', content='')
+    // Meta Keyword
+    meta(name='keywords', content='')
+    // meta character set
+    meta(charset='UTF-8')
+    // Site Title
+    title Change Your City
+    link(href='https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700', rel='stylesheet')
+    //
+      CSS
+      =============================================
+    link(rel='stylesheet', href='stylesheets/home/linearicons.css')
+    link(rel='stylesheet', href='stylesheets/home/font-awesome.min.css')
+    link(rel='stylesheet', href='stylesheets/home/bootstrap.css')
+    link(rel='stylesheet', href='stylesheets/home/magnific-popup.css')
+    link(rel='stylesheet', href='stylesheets/home/nice-select.css')
+    link(rel='stylesheet', href='stylesheets/home/hexagons.min.css')
+    link(rel='stylesheet', href='stylesheets/home/animate.min.css')
+    link(rel='stylesheet', href='stylesheets/home/owl.carousel.css')
+    link(rel='stylesheet', href='stylesheets/home/main.css')
+  body
+    body
+      header#header
+        .container.main-menu
+          .row.align-items-center.justify-content-between.d-flex
+            #logo
+              a(href='index.html')
+                img(src='images/Logo1.png', alt='', title='')
+            nav#nav-menu-container
+              ul.nav-menu
+                li.menu-active
+                  a(href='http://localhost:3000') Home
+                li
+                  a(href='#') Sobre nosotros
+                li
+                  a(href='http://localhost:3000/proyectos') Proyectos
+                li
+                  a(href='http://localhost:3000/desperfectos') Desperfectos
+                li
+                  a(href='http://localhost:3000/contact') Contacto
+                li
+                  li
+                    if !isAuthenticated
+                      a(href='http://localhost:3000/auth/signin') Conectar
+                    else
+                      a(href="#")= user.firstName
+                li
+                  if isAuthenticated
+                    a(href="http://localhost:3000/auth/logout") Desconectar
+            // #nav-menu-container
+      // #header
+      // start banner Area
+      section#home.banner-area.relative
+        .overlay.overlay-bg
+        .container
+          .row.d-flex.align-items-center.justify-content-center
+            .about-content.col-lg-12
+              h1.text-white
+                | Proyectos
+              p.text-white.link-nav
+                a(href='http://localhost:3000/') Home 
+                a -> 
+                a(href='#')  Proyectos
+      // End banner Area
+      // Start offered-service Area
+      section.offered-service-area.section-gap
+        .container
+          .row.d-flex.justify-content-center
+            .col-md-12.pb-40.header-text.text-center
+              h1.pb-10 Últimos proyectos
+              p
+                | Echale un vistazo a los proyectos más interesantes.
+          .row
+            .col-lg-4
+              .single-offered-service
+                img.img-fluidv2(src='images/Proyecto/proyectoPiscina.jpeg', alt='')
+                a(href='#')
+                  h4 Piscina Municipal
+                  h5 Torre del Mar
+                p
+                  | Piscina en Torre del Mar para todos sus ciudadanos, para mejorar salud y ocio de todos ellos.
+            .col-lg-4
+              .single-offered-service
+                img.img-fluidv2(src='images/Proyecto/proyectoSkate.jpeg', alt='')
+                a(href='#')
+                  h4 Skate Park
+                  h5 Antequera
+                p
+                  | Creación de una zona de entreno para mejorar las opciones de deporte y ocio de todos los ciudadanos, además de cubrir necesid latente.
+            .col-lg-4
+              .single-offered-service
+                img.img-fluidv2(src='images/Proyecto/proyectoParque.jpg', alt='')
+                a(href='#')
+                  h4 Parque infantil
+                  h5 Los Romanes
+                p
+                  | Creación de una zona de ocio y diversión para los más pequeños de los alrededores en busca de mejorar la infancia de estos.
+      // END service-area
+      // Start brand Area
+      section.brand-area.pt-120
+        .container
+          .row.align-items-center
+            .col.single-brand
+              img.img-fluid(src='images/Logos/logo_JANDA.png', alt='')
+            .col.single-brand
+              img.img-fluid(src='images/Logos/LogoUMA.jpg', alt='')
+            .col.single-brand
+              img.img-fluid(src='images/Logos/Logo_ETSII.jpg', alt='')
+            .col.single-brand
+              img.img-fluid(src='images/Logos/Logo_Link_Uma.png', alt='')
+            .col.single-brand
+              img.img-fluid(src='images/Logos/Logo_AYTO.png', alt='')
+      // End brand Area
+      // start footer Area
+      footer.footer-area.section-gap
+        .container
+          .row
+            .col-lg-3.col-md-12
+              .single-footer-widget
+                h6 Información adicional
+                ul.footer-nav
+                  li
+                    a(href='#') Segmentant default page
+                  li
+                    a(href='#') Comentarios de los usuarios
+                  li
+                    a(href='#') Lista apps sociales del 2018
+                  li
+                    a(href='#') Artículo sobre los beneficios de su uso
+            .col-lg-6.col-md-12
+            .col-lg-3.col-md-12
+              .single-footer-widget.mail-chimp
+                h6.mb-20 Instragram Feed
+                ul.instafeed.d-flex.flex-wrap
+                  li
+                    img(src='images/i1.jpg', alt='')
+                  li
+                    img(src='images/i2.jpg', alt='')
+                  li
+                    img(src='images/i3.jpg', alt='')
+                  li
+                    img(src='images/i4.jpg', alt='')
+                  li
+                    img(src='images/i5.jpg', alt='')
+                  li
+                    img(src='images/i6.jpg', alt='')
+                  li
+                    img(src='images/i7.jpg', alt='')
+                  li
+                    img(src='images/i8.jpg', alt='')
+          .row.footer-bottom.d-flex.justify-content-between
+            p.col-lg-8.col-sm-12.footer-text.m-0.text-white
+              | Copyright ©
+              script.
+                document.write(new Date().getFullYear());
+              |  Todos los derechos reservados
+            .col-lg-4.col-sm-12.footer-social
+              a(href='#')
+                i.fa.fa-facebook
+              a(href='#')
+                i.fa.fa-twitter
+              a(href='#')
+                i.fa.fa-dribbble
+              a(href='#')
+                i.fa.fa-behance
+      // end footer Area
+      script(src='javascripts/vendor/jquery-2.2.4.min.js')
+      script(src='https://cdnjavascripts.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q', crossorigin='anonymous')
+      script(src='javascripts/vendor/bootstrap.min.js')
+      script(src='javascripts/easing.min.js')
+      script(src='javascripts/hoverIntent.js')
+      script(src='javascripts/superfish.min.js')
+      script(src='javascripts/jquery.ajaxchimp.min.js')
+      script(src='javascripts/jquery.magnific-popup.min.js')
+      script(src='javascripts/owl.carousel.min.js')
+      script(src='javascripts/hexagons.min.js')
+      script(src='javascripts/jquery.nice-select.min.js')
+      script(src='javascripts/jquery.counterup.min.js')
+      script(src='javascripts/waypoints.min.js')
+      script(src='javascripts/mail-script.js')
+      script(src='javascripts/indexmain.js')

@@ -1,5 +1,5 @@
 doctype html
-html.no-javascripts(lang='zxx')
+html.no-js(lang='zxx')
   head
     // Mobile Specific Meta
     meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
@@ -33,146 +33,46 @@ html.no-javascripts(lang='zxx')
       .container.main-menu
         .row.align-items-center.justify-content-between.d-flex
           #logo
-            // <a href="index.html"><img src="images/logo.png" alt="" title="" /></a>
             a(href='index.html')
               img(src='images/Logo1.png', alt='', title='')
           nav#nav-menu-container
-            // text-shadow: -1px -1px 1px #333, 1px -1px 1px #333, -1px 1px 1px #333, 1px 1px 1px #333;
-            ul.nav-menu
-              li.menu-active
-                a(href='#') Home
-              li
-                a(href='http://localhost:3000/about') About
-              li
-                a(href='proyectos') Proyectos
-              li
-                a(href='desperfectos') Desperfectos
-              li
-                a(href='contact') Contacto
-              li
-                if !isAuthenticated
-                  a(href='auth/signin') Conectar
-                else
-                  a(href="#")= user.firstName
-              li
-                if !isAuthenticated
-                  a(href='auth/signup') Registrar
-              li
-                if isAuthenticated
-                  a(href="auth/logout") Desconectar
+          ul.nav-menu
+            li.menu-active
+              a(href='http://localhost:3000') Home
+            li
+              a(href='http://localhost:3000/about') About
+            li
+              a(href='http://localhost:3000/proyectos') Proyectos
+            li
+              a(href='http://localhost:3000/desperfectos') Desperfectos
+            li
+              a(href='http://localhost:3000/contact') Contacto
+            li
+              if !isAuthenticated
+                a(href='http://localhost:3000/auth/signin') Conectar
+              else
+                a(href="#")= user.firstName
+            li
+              if !isAuthenticated
+                a(href='http://localhost:3000/auth/signup') Registrar
+            li
+              if isAuthenticated
+                a(href="http://localhost:3000/auth/logout") Desconectar
           // #nav-menu-container
     // #header
     // start banner Area
-    section#home.banner-area
+    section#home.banner-area.relative
+      .overlay.overlay-bg
       .container
-        .row.fullscreen.d-flex.align-items-center.justify-content-center
-          .banner-content.col-lg-6.col-md-6
-            h1(style='text-shadow: -1px -1px 1px #333, 1px -1px 1px #333, -1px 1px 1px #333, 1px 1px 1px #333;')
-              | Mejora
-              br
-              | 								Tu ciudad
-              br
-              | 								Con Nosotros
-            p.text-white.text-uppercase(style='text-shadow: -1px -1px 1px #333, 1px -1px 1px #333, -1px 1px 1px #333, 1px 1px 1px #333;')
-              | Todos queremos una ciudad mejor
-            if !isAuthenticated
-              a.primary-btn.header-btn(href='auth/signin') Conectar 
-            else
-              a.primary-btn.header-btn(href='#') Crear Propuesta 
-          .banner-img.col-lg-6.col-md-6
-            // <img class="img-fluid" src="images/banner-img.png" alt="">
+        .row.d-flex.align-items-center.justify-content-center
+          .about-content.col-lg-12
+            h1.text-white
+              | Sobre nosotros
+            p.text-white.link-nav
+              a(href='index.html') Home 
+              a -> 
+              a(href='about.html')  Sobre nosotros
     // End banner Area
-    // Start Desperfectus Area
-    section.products-area.section-gap
-      .container
-        .row.d-flex.justify-content-center
-          .col-md-12.pb-40.header-text.text-center
-            h1.pb-10 Últimos Desperfectos
-            p
-              | Échale un vistazo a los desperfectos de tus alrededores.
-        .row
-          .col-lg-3.col-md-6
-            .single-product
-              .thumb
-                // <img src="images/p1.png" alt="">
-                img.details-image(src='images/desp/farola1.jpg', alt='')
-              .details
-                h4 Farola Rota
-                p
-                  | Luminaria destruida.
-                p
-                  b Vélez-Málaga
-                a.primary-btn.text-uppercase(href='#') Ver Propuesta
-          .col-lg-3.col-md-6
-            .single-product
-              .thumb
-                // <img src="images/p2.png" alt="">
-                img.details-image(src='images/desp/Alcantarilla_peligrosa.jpeg', alt='')
-              .details
-                h4 Alcantarilla rota
-                p
-                  | Alcantarilla peligrosa, carretera.
-                p
-                  b El Palo
-                a.primary-btn.text-uppercase(href='#') Ver Propuesta
-          .col-lg-3.col-md-6
-            .single-product
-              .thumb
-                // <img src="images/p3.png" alt="">
-                img.details-image(src='images/desp/ArbolCalle.jpeg', alt='')
-              .details
-                h4 Árbol caído
-                p
-                  | Árbol en mitad de carretera.
-                p
-                  b Alhaurín de la Torre
-                a.primary-btn.text-uppercase(href='#') Ver Propuesta
-          .col-lg-3.col-md-6
-            .single-product
-              .thumb
-                img.details-image(src='images/desp/banco.jpeg', alt='')
-              .details
-                h4 Banco roto
-                p
-                  | Banco roto sin una pata.
-                p
-                  b Antequera
-                a.primary-btn.text-uppercase(href='#') Ver Propuesta
-    // End products Area
-    // Start offered-service Area
-    section.offered-service-area.section-gap
-      .container
-        .row.d-flex.justify-content-center
-          .col-md-12.pb-40.header-text.text-center
-            h1.pb-10 Últimos proyectos
-            p
-              | Echale un vistazo a los proyectos más interesantes.
-        .row
-          .col-lg-4
-            .single-offered-service
-              img.img-fluidv2(src='images/Proyecto/proyectoPiscina.jpeg', alt='')
-              a(href='#')
-                h4 Piscina Municipal
-                h5 Torre del Mar
-              p
-                | Piscina en Torre del Mar para todos sus ciudadanos, para mejorar salud y ocio de todos ellos.
-          .col-lg-4
-            .single-offered-service
-              img.img-fluidv2(src='images/Proyecto/proyectoSkate.jpeg', alt='')
-              a(href='#')
-                h4 Skate Park
-                h5 Antequera
-              p
-                | Creación de una zona de entreno para mejorar las opciones de deporte y ocio de todos los ciudadanos, además de cubrir necesid latente.
-          .col-lg-4
-            .single-offered-service
-              img.img-fluidv2(src='images/Proyecto/proyectoParque.jpg', alt='')
-              a(href='#')
-                h4 Parque infantil
-                h5 Los Romanes
-              p
-                | Creación de una zona de ocio y diversión para los más pequeños de los alrededores en busca de mejorar la infancia de estos.
-    // END service-area
     // Start about-video Area
     section.about-video-area.section-gap
       .container
@@ -180,9 +80,9 @@ html.no-javascripts(lang='zxx')
           .col-lg-6.about-video-left
             h6.text-uppercase Aplicación Change Your City
             h1
-              | Tenemos una Ciudad
+              | Tenemos una Ciudad 
               br
-              | 								Que cuidar y que cambiar
+              | 									Que cuidar y que cambiar
             p
               span Atrévete a mejorar tus alrededores
             p
@@ -247,18 +147,18 @@ html.no-javascripts(lang='zxx')
     // End feature Area
     // Start brand Area
     section.brand-area.pt-120
-        .container
-          .row.align-items-center
-            .col.single-brand
-              img.img-fluid(src='images/Logos/logo_JANDA.png', alt='')
-            .col.single-brand
-              img.img-fluid(src='images/Logos/LogoUMA.jpg', alt='')
-            .col.single-brand
-              img.img-fluid(src='images/Logos/Logo_ETSII.jpg', alt='')
-            .col.single-brand
-              img.img-fluid(src='images/Logos/Logo_Link_Uma.png', alt='')
-            .col.single-brand
-              img.img-fluid(src='images/Logos/Logo_AYTO.png', alt='')
+      .container
+        .row.align-items-center
+          .col.single-brand
+            img.img-fluid(src='images/Logos/logo_JANDA.png', alt='')
+          .col.single-brand
+            img.img-fluid(src='images/Logos/LogoUMA.jpg', alt='')
+          .col.single-brand
+            img.img-fluid(src='images/Logos/Logo_ETSII.jpg', alt='')
+          .col.single-brand
+            img.img-fluid(src='images/Logos/Logo_Link_Uma.png', alt='')
+          .col.single-brand
+            img.img-fluid(src='images/Logos/Logo_AYTO.png', alt='')
     // End brand Area
     // start footer Area
     footer.footer-area.section-gap
@@ -315,6 +215,7 @@ html.no-javascripts(lang='zxx')
     // end footer Area
     script(src='javascripts/vendor/jquery-2.2.4.min.js')
     script(src='https://cdnjavascripts.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q', crossorigin='anonymous')
+    script(type='text/javascript', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA')
     script(src='javascripts/vendor/bootstrap.min.js')
     script(src='javascripts/easing.min.js')
     script(src='javascripts/hoverIntent.js')

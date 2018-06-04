@@ -5,6 +5,10 @@ var controllers = require('.././controllers');
 var AuthMiddleware = require('.././middleware/auth');
 
 router.get('/', controllers.HomeController.index);
+router.get('/proyectos', controllers.HomeController.proyectos);
+router.get('/desperfectos', controllers.HomeController.desperfectos);
+router.get('/contact', controllers.HomeController.contact);
+router.get('/about', controllers.HomeController.about);
 
 //routas de usuario
 router.get('/auth/signup', controllers.UserController.getSignUp);

@@ -2,6 +2,7 @@ doctype html
 html(lang='en')
   head
     title Change Your City
+    link(rel='icon', type='image/png', href='/images/icons/favicon.ico')
     meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
     link(rel='stylesheet', type='text/css', href='/stylesheets/register.css')
   body
@@ -46,7 +47,7 @@ html(lang='en')
             | Dirección *
           input.long(type='text')
         p
-          label.optional
+          label
             | Teléfono
           input.long(type='text', maxlength='9')
         p
@@ -181,7 +182,7 @@ html(lang='en')
           input(type='checkbox', value='')
           // Se linkeara al archivo de terminos y condiciones de la aplicación
           label
-            | *  Acepto los
+            | *  Acepto los 
             a(href='#') Términos y Condiciones
         p.agreement
           input(type='checkbox', value='')
