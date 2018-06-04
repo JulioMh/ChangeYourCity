@@ -9,7 +9,7 @@ describe('Pruebas de registro de usuario:', function() {
            .post('/auth/signup')
            .send({ username: 'a@root.com', password: 'root' })
            .expect(302)
-           .expect('Location', '/auth/signin')
+           .expect('Location', '/auth/signup')
            .end(done);
     });
 
@@ -20,7 +20,6 @@ describe('Pruebas de registro de usuario:', function() {
            .send({ username: '', password: '' })
            .expect(302)
            .expect('Location', '/auth/signup')
-           if (err) return done(err)
            .end(done);
     });
 
@@ -31,7 +30,6 @@ describe('Pruebas de registro de usuario:', function() {
            .send({ username: 'root@root.com', password: 'root' })
            .expect(302)
            .expect('Location', '/auth/signup')
-           if (err) return done(err)
            .end(done);
     });
 });
