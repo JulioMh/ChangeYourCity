@@ -11,7 +11,8 @@ module.exports = {
 		var propuesta = {
 			titulo : req.body.titulo,
 			localidad : req.body.localidad,
-			informacion : req.body.informacion
+			informacion : req.body.informacion,
+			creator: req.user.email
 		};
 
 		var config = require('.././database/config');
