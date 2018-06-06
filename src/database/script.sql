@@ -16,5 +16,6 @@ create table propuesta(
 	id integer AUTO_INCREMENT primary key,
 	titulo varchar(255),
   localidad varchar(255),
-  informacion varchar(1000)
+  informacion varchar(1000),
+	creator varchar(255)
 );
